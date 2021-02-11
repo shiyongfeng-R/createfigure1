@@ -7,7 +7,7 @@
 #' @keywords  createfigure1
 #' @export
 #' @examples
-#' createfigure1(x1,x2, main="Late loss distribution",xlab="Late loss (mm)",ylab = "cumulative frequency (%)")
+#' x1 <- rnorm(20,4,6);x2 <- rep(c("DCB","DES"),each=10);x1 <- data.frame(x1,x2);createfigure1(x1,x2, main="Late loss distribution",xlab="Late loss (mm)",ylab = "cumulative frequency (%)")
 #' @author Yongfeng Shi
 #' @title createfigure1
 #' Author:Yongfeng Shi
@@ -26,6 +26,7 @@ createfigure1 <- function(l2,l3,main="main",xlab="x",ylab="y"){
   legend1 <- rownames(z)
   e <- length(legend1)
   max <- round(max(x[(1:ncol)]))+1
+  min <- round(min(x[(1:ncol)]))-1
   i <- 1
   m <- c("gray","red","blue","purple","brown","black","yellow")
   w <- matrix(1:length(legend1)*ncol,ncol =length(legend1),nrow = ncol,byrow =F)
@@ -61,7 +62,7 @@ createfigure1 <- function(l2,l3,main="main",xlab="x",ylab="y"){
     if (i==1&n==1){
       plot(x1,cumsum,type = "l",lty=i,col="gray",xlab=xlab,ylab=ylab,main=main,bty="n",
            xaxt="n",yaxt="n")
-      axis(side = 1,at=c(seq(from=0,to=max,by=0.5)),labels = c(seq(from=0,to=max,by=0.5)))
+      axis(side = 1,at=c(seq(from=min,to=max,by=0.5)),labels = c(seq(from=min,to=max,by=0.5)))
       axis(side = 2,at=c(seq(0,100,by=10)),labels =c(seq(0,100,by=10)))
     }
 

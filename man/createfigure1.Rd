@@ -23,7 +23,7 @@ Title:createfigure1
 This function allows you to convert the numeric dataframe to cumulative frequency figure.
 }
 \examples{
-createfigure1(x1,x2, main="Late loss distribution",xlab="Late loss (mm)",ylab = "cumulative frequency (\%)")
+x1 <- rnorm(20,4,6);x2 <- rep(c("DCB","DES"),each=10);x1 <- data.frame(x1,x2);createfigure1(x1,x2, main="Late loss distribution",xlab="Late loss (mm)",ylab = "cumulative frequency (\%)")
 }
 \author{
 Yongfeng Shi

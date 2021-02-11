@@ -1,6 +1,8 @@
 Package: createfigure1
-Title: What the Package Does (One Line, Title Case)
+Title: the package is used for convert data to cumulative frequency figure automately.
 Version: 0.0.0.9000
+Author: Yongfeng Shi
+Maintainer: yongfeng shi <shiyf@jlu.edu.cn>
 Authors@R: 
     person(given = "First",
            family = "Last",

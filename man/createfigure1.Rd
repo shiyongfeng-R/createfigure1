@@ -3,9 +3,10 @@
 \encoding{UTF-8}
 \name{createfigure1}
 \alias{createfigure1}
-\title{createfigure1 function
-Title:createfigure1
-This function allows you to convert the numeric dataframe to cumulative frequency figure.}
+\title{createfigure1
+Author:Yongfeng Shi
+Version: .0.0.9000
+Maintainer: yongfeng shi \href{mailto:shiyf@jlu.edu.cn}{shiyf@jlu.edu.cn}}
 \usage{
 createfigure1(l2, l3, main = "main", xlab = "x", ylab = "y")
 }
@@ -23,8 +24,8 @@ This function allows you to convert the numeric dataframe to cumulative frequenc
 }
 \examples{
 createfigure1(x1,x2, main="Late loss distribution",xlab="Late loss (mm)",ylab = "cumulative frequency (\%)")
-Author:Yongfeng Shi
-Version: 0.1.0
-Maintainer: The package maintainer shiyf@jlu.edu.cn
+}
+\author{
+Yongfeng Shi
 }
 \keyword{createfigure1}

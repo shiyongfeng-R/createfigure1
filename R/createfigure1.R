@@ -8,9 +8,11 @@
 #' @export
 #' @examples
 #' createfigure1(x1,x2, main="Late loss distribution",xlab="Late loss (mm)",ylab = "cumulative frequency (%)")
+#' @author Yongfeng Shi
+#' @title createfigure1
 #' Author:Yongfeng Shi
-#' Version: 0.1.0
-#' Maintainer: The package maintainer shiyf@jlu.edu.cn
+#' Version: .0.0.9000
+#' Maintainer: yongfeng shi <shiyf@jlu.edu.cn>
 #' @encoding UTF-8
 #'
 
